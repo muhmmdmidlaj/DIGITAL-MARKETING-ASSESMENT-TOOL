@@ -1,0 +1,282 @@
+.loadingScreen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 24px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ─── Header ──────────────────────────────────── */
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.emoji {
+  font-size: 3rem;
+  line-height: 1;
+  animation: bounceIn 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+@keyframes bounceIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.heading {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.subheading {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+/* ─── Result Card ─────────────────────────────── */
+.resultCard {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(168,85,247,0.04));
+  border-color: rgba(99,102,241,0.2);
+}
+
+/* Score section */
+.scoreSection {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.ringWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ringCenter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.pctVal {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pctLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.scoreDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.scoreBig {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.scoreNum {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.scoreOf {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.scoreSubtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--border);
+}
+
+/* Level description */
+.levelDesc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Performance breakdown */
+.breakdown {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.breakdownItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 4px;
+  border-right: 1px solid var(--border);
+}
+.breakdownItem:last-child { border-right: none; }
+
+.breakdownVal {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.breakdownLabel {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+/* ─── Level Map ───────────────────────────────── */
+.levelMap {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.levelMapTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.levelBars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.levelBar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.levelBarMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.levelBarLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.3s;
+}
+
+.levelBarActive {
+  color: var(--text-primary);
+}
+
+.levelBarRange {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.levelBarTrack {
+  height: 6px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.levelBarFill {
+  height: 100%;
+  border-radius: 99px;
+  transition: opacity 0.5s;
+}
+
+/* ─── Actions ─────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── Responsive ──────────────────────────────── */
+@media (max-width: 480px) {
+  .resultCard {
+    padding: 24px 20px;
+  }
+
+  .scoreSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .scoreDetails {
+    align-items: center;
+  }
+
+  .main {
+    padding: 40px 16px 60px;
+  }
+}

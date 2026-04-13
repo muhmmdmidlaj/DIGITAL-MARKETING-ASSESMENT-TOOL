@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "Which social media platform is best for reaching professionals, business owners, and job seekers?",
+    "options": [
+      "Snapchat",
+      "Pinterest",
+      "LinkedIn",
+      "Instagram"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "question": "Which metric indicates how many unique users saw your social media post?",
+    "options": [
+      "Impressions",
+      "Engagement",
+      "Reach",
+      "Follower count"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "What does 'CTA' stand for in content marketing?",
+    "options": [
+      "Content Traffic Analytics",
+      "Campaign Tracking Automation",
+      "Call To Action",
+      "Click Through Advertising"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "question": "What is 'A/B testing' in digital marketing?",
+    "options": [
+      "Testing two different websites at the same time",
+      "Comparing two versions of content to see which performs better",
+      "Running ads on two different platforms",
+      "A method to block spam traffic"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 5,
+    "question": "When you type something into Google and results appear WITHOUT any ads — those are called what?",
+    "options": [
+      "Paid search results",
+      "Organic search results",
+      "Sponsored listings",
+      "Display results"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "question": "What is a 'long-tail keyword'?",
+    "options": [
+      "A keyword that is very short and generic",
+      "A keyword used only in paid ads",
+      "A longer, specific phrase with lower competition and clearer intent",
+      "A keyword repeated many times on a page"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 7,
+    "question": "In Google Ads, you only pay when someone actually clicks on your ad. What is this pricing model called?",
+    "options": [
+      "Cost Per View (CPV)",
+      "Cost Per Impression (CPM)",
+      "Cost Per Click (CPC)",
+      "Cost Per Lead (CPL)"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "What is the main advantage of SEM (paid ads) over SEO (organic)?",
+    "options": [
+      "SEM results last forever once you stop paying",
+      "SEM is always cheaper than SEO",
+      "SEM can drive traffic to your site almost immediately",
+      "SEM improves your website's organic ranking too"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 9,
+    "question": "What is a 'pre-roll ad' in video marketing?",
+    "options": [
+      "An ad shown at the end of a video",
+      "An ad displayed in the sidebar next to a video",
+      "An ad that plays before the main video content",
+      "A sponsored thumbnail in search results"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "question": "What does CRM stand for in digital marketing?",
+    "options": [
+      "Content Reach Management",
+      "Customer Relationship Management",
+      "Campaign Revenue Model",
+      "Cost Ratio Metric"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 11,
+    "question": "A micro-influencer (5,000–50,000 followers) promoting your product often gives what kind of result?",
+    "options": [
+      "Very poor results because of small audience",
+      "High engagement because of niche, loyal followers",
+      "Exactly the same result as a celebrity influencer",
+      "No measurable result in digital marketing"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "What is a 'target audience' in digital marketing?",
+    "options": [
+      "A specific group of people most likely to be interested in a product or service",
+      "All internet users in the world",
+      "Only the employees of a company",
+      "Only people who follow the brand on social media"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "question": "What does 'organic reach' mean on social media?",
+    "options": [
+      "The number of people who see content without paid promotion",
+      "The number of people who see paid advertisements",
+      "The number of followers a brand buys",
+      "The number of messages sent by the brand"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "What is a keyword in digital marketing?",
+    "options": [
+      "A word or phrase people type into search engines",
+      "A password used to log in to websites",
+      "A company slogan used in advertisements",
+      "A code used to build websites"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 15,
+    "question": "What is the main purpose of creating valuable content online?",
+    "options": [
+      "To attract, educate, and build trust with the audience",
+      "To reduce website visitors",
+      "To replace marketing campaigns",
+      "To gain more social media followers"
+    ],
+    "answer": 0
+  }
+]

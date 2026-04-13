@@ -1,66 +1,62 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className={styles.main}>
+      {/* ── Hero ────────────────────────────────── */}
+      <section className={styles.hero}>
+        <div className={styles.heroInner}>
+          <div className={`${styles.pill} fade-up`}>
+            <span className={styles.pillDot} />
+            100% Free · No login required
+          </div>
+
+          <h1 className={`${styles.heroTitle} fade-up fade-up-delay-1`}>
+            <span className="gradient-text">Digital Marketing</span>
+            <br />
+            Assessment Test
+          </h1>
+
+          <p className={`${styles.heroSub} fade-up fade-up-delay-2`}>
+            15 questions · Instant score · Discover your skill level
           </p>
+
+          <div className={`${styles.heroCta} fade-up fade-up-delay-3`}>
+            <Link href="/form" className="btn-primary" id="cta-start">
+              Start Free Assessment
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <p className={styles.heroNote}>⏱ Takes only 10–15 minutes</p>
+          </div>
+
+          {/* Stats row */}
+          <div className={`${styles.statsRow} fade-up fade-up-delay-4`}>
+            {[
+              { val: "15", label: "Questions" },
+              { val: "3", label: "Skill Levels" },
+              { val: "100%", label: "Free" },
+            ].map((s) => (
+              <div key={s.label} className={styles.stat}>
+                <span className={styles.statVal}>{s.val}</span>
+                <span className={styles.statLabel}>{s.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        {/* Decorative grid lines */}
+        <div className={styles.gridLines} aria-hidden="true" />
+      </section>
+
+      {/* ── Footer ──────────────────────────────── */}
+      <footer className={styles.footer}>
+        <p>© {new Date().getFullYear()} Digital Marketing Assessment Test</p>
+      </footer>
+    </main>
   );
 }
