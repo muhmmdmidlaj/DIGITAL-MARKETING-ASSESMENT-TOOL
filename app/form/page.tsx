@@ -81,7 +81,7 @@ export default function FormPage() {
     try {
       const res = await createLead({
         name: name.trim(),
-        mobile: `${countryCode} ${mobile.trim()}`,
+        mobile: `${countryCode.replace("+", "")} ${mobile.trim()}`,
         profession,
       });
       localStorage.setItem("lq_user_id", res.id);
