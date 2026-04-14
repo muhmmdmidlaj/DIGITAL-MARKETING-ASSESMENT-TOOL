@@ -55,8 +55,17 @@ export default function FormPage() {
     const e: FormErrors = {};
     if (!name.trim() || name.trim().length < 2)
       e.name = "Please enter your full name (at least 2 characters).";
-    if (!mobile.trim() || mobile.trim().length < 7 || mobile.trim().length > 15)
+    const trimmedMobile = mobile.trim();
+    if (!trimmedMobile) {
       e.mobile = "Enter a valid mobile number.";
+    } else if (countryCode === "+91") {
+      if (trimmedMobile.length !== 10)
+        e.mobile = "Indian mobile number must be exactly 10 digits.";
+      else if (!/^[6-9]/.test(trimmedMobile))
+        e.mobile = "Indian mobile number must start with 6, 7, 8, or 9.";
+    } else if (trimmedMobile.length < 7 || trimmedMobile.length > 15) {
+      e.mobile = "Enter a valid mobile number.";
+    }
     if (!profession)
       e.profession = "Please select your profession.";
     setErrors(e);
