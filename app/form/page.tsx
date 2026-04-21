@@ -86,6 +86,7 @@ export default function FormPage() {
       });
       localStorage.setItem("lq_user_id", res.id);
       localStorage.setItem("lq_user_name", name.trim());
+      localStorage.setItem("lq_user_profession", profession);
       router.push("/test");
     } catch (err: unknown) {
       setApiError(
